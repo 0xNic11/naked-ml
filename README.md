@@ -10,7 +10,7 @@ To understand what's really happening under the hood of the models we use every 
 |-----------|--------|
 | K-Nearest Neighbors (KNN) | ✅ Done |
 | Linear Regression | ✅ Done |
-| Logistic Regression | 🔜 Coming |
+| Logistic Regression | ✅ Done |
 | Naive Bayes | 🔜 Coming |
 | Support Vector Machine (SVM) | 🔜 Coming |
 | Decision Trees | 🔜 Coming |
