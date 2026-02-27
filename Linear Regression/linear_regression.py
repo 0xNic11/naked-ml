@@ -1,7 +1,9 @@
 import numpy as np          
 
 class LinearRegression:
-    
+    """
+    Linear Regression implementation using Gradient Descent.
+    """
     def __init__(self, lr=0.001, n_iters=1000):
         self.lr = lr
         self.n_iters = n_iters
@@ -10,7 +12,9 @@ class LinearRegression:
         
     
     def fit(self, X, y):
-        
+        """
+        Fit the linear regression model to the training data using gradient descent.
+        """
         # parameters init
         n_samples, n_features = X.shape
         self.w = np.zeros(n_features)
@@ -28,13 +32,22 @@ class LinearRegression:
             self.b -= self.lr * db
     
     def predict(self, X):
+        """ 
+        Predict using the linear regression model.
+        """
         y_pred = np.dot(X, self.w) + self.b
         return y_pred
     
     def mean_squared_error(self, y, y_pred):
+        """
+        Calculate the Mean Squared Error between true and predicted values.
+        """
         return np.mean((y - y_pred) ** 2)
     
     def r2_score(self, y, y_pred):
+        """
+        Calculate the R2 Score (Coefficient of Determination) between true and predicted values.
+        """
         y_mean = np.mean(y)
         ss_total = np.sum((y - y_mean) ** 2)
         ss_residual = np.sum((y - y_pred) ** 2)
