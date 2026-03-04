@@ -12,7 +12,7 @@ To understand what's really happening under the hood of the models we use every 
 | Linear Regression | ✅ Done |
 | Logistic Regression | ✅ Done |
 | Naive Bayes | ✅ Done |
-| Support Vector Machine (SVM) | 🔜 Coming |
+| Support Vector Machine (SVM) | ✅ Done |
 | Decision Trees | 🔜 Coming |
 
 ## 🤝 Contributing
